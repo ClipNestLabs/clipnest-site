@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title>ClipNest Logo</title>
+  <!-- Brand background left transparent so it works on any page color -->
+  <!-- Paperclip mark inside rounded square -->
+  <g fill="none" stroke="#ffffff" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rounded square -->
+    <rect x="192" y="192" width="640" height="640" rx="96" ry="96"/>
+    <!-- Paperclip (two parallel rounded loops), sized to sit inside the square -->
+    <path d="M 390 546 c 0 -120 98 -218 218 -218 s 218 98 218 218 c 0 120 -98 218 -218 218 c -96 0 -160 -64 -160 -150 v -220
+             c 0 -70 52 -122 122 -122 c 70 0 122 52 122 122 v 250"/>
+    <path d="M 512 608 v -250 c 0 -32 26 -58 58 -58 s 58 26 58 58 v 250 c 0 64 -52 116 -116 116 s -116 -52 -116 -116 v -210"/>
+  </g>
+</svg>
