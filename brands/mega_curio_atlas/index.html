@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mega Curio Atlas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🗺️ Mega Curio Atlas</h1>
+    <p>Daily curiosities curated with care.</p>
+  </header>
+
+  <main id="gallery" class="grid"></main>
+
+  <footer>
+    <small>Powered by Mega Curio Atlas Pro • <a href="data/example_curio_items.json">data</a></small>
+    <br>
+    <small><a href="../../index.html">← Back to ClipNest Home</a></small>
+  </footer>
+
+  <script>
+    async function load() {
+      const res = await fetch('data/example_curio_items.json');
+      const items = await res.json();
+      const el = document.getElementById('gallery');
+      el.innerHTML = items.map(x => `
+        <article class="card">
+          <img src="${x.image}" alt="${x.name}" loading="lazy">
+          <div class="card-body">
+            <h3>${x.name}</h3>
+            <p>${x.summary || ''}</p>
+            <a href="${x.url}" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+      `).join('');
+    }
+    load();
+  </script>
+</body>
+</html>

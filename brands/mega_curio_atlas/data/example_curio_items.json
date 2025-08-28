@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Example Curio",
+    "url": "https://example.com",
+    "image": "https://picsum.photos/seed/curio1/600/400",
+    "summary": "A delightful curiosity to test your pipeline."
+  },
+  {
+    "name": "Another Curio",
+    "url": "https://example.com/2",
+    "image": "https://picsum.photos/seed/curio2/600/400",
+    "summary": "Second example to fill the grid."
+  }
+]
